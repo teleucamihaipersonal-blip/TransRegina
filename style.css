@@ -1,1 +1,58 @@
- 
+:root {
+    --bg: #0f0f0f;
+    --text: #e0e0e0;
+    --accent: #c8102e; /* roșu principal */
+    --secondary: #1f1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary);
+    padding: 1rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    padding: 2rem 8%;
+}
+
+footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
