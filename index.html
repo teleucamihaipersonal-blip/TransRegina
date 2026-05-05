@@ -3,31 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TransRegina - Acasă</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TransRegina VTC - Acasă</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page">
+    <!-- HEADER -->
     <header>
-        <div class="logo">TransRegina</div>
-        <nav>
-            <a href="index.html">Acasă</a>
-            <a href="elemente.html">Elemente</a>
-            <a href="regulament.html">Regulament</a>
-            <a href="despre.html">Despre Noi</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                <div>
+                    <div class="logo-text">TransRegina</div>
+                    <div class="logo-sub">Virtual Trucking Company</div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Acasă</a>
+                <a href="elemente.html">Elemente</a>
+                <a href="regulament.html">Regulament</a>
+                <a href="despre.html">Despre Noi</a>
+                <a href="recrutari.html">Recrutări</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- MAIN -->
     <main>
-        <h1>Bine ai venit la TransRegina VTC</h1>
-        <p>Comunitatea noastră dedicată pasionaților de transport virtual în Euro Truck Simulator 2.</p>
+        <section class="hero">
+            <div>
+                <h1 class="hero-title">
+                    <span class="hero-gradient">TransRegina VTC</span><br>
+                    Convoaie, disciplină și vibe de echipă.
+                </h1>
+                <p class="hero-subtitle">
+                    O companie virtuală de transport pentru Euro Truck Simulator 2, construită pe respect,
+                    organizare și plăcerea de a conduce împreună.
+                </p>
+
+                <div class="hero-badges">
+                    <span class="badge badge-primary">ETS2 · TMP</span>
+                    <span class="badge">Convoaie săptămânale</span>
+                    <span class="badge">Skin oficial TransRegina</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="recrutari.html" class="btn btn-primary">Aplică la TransRegina</a>
+                    <a href="regulament.html" class="btn btn-ghost">Vezi regulamentul</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card-title">Statistici comunitate (exemplu)</div>
+                <div class="hero-metric">25+ șoferi</div>
+                <div class="hero-metric-sub">activi în convoaie și curse zilnice</div>
+                <div style="margin-top:1rem;font-size:0.8rem;color:var(--muted);">
+                    Discord, evenimente programate, respect pentru trafic și pentru colegi.
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Ce oferim</div>
+                <h2 class="section-title">Experiență de VTC completă</h2>
+                <p class="section-desc">
+                    De la skin-uri personalizate până la regulament clar și organizare pe Discord.
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Convoaie organizate</h3>
+                    <p>Trasee stabilite, puncte de întâlnire, pauze și sosire coordonată.</p>
+                </div>
+                <div class="card">
+                    <h3>Identitate vizuală</h3>
+                    <p>Logo, culori oficiale și skin-uri dedicate pentru camioane.</p>
+                </div>
+                <div class="card">
+                    <h3>Comunitate</h3>
+                    <p>Atmosferă relaxată, dar seriozitate în trafic și în evenimente.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+        <p>&copy; <span id="year"></span> TransRegina VTC · ETS2</p>
     </footer>
+</div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
