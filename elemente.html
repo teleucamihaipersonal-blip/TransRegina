@@ -1,1 +1,33 @@
-ha
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransRegina - Elemente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TransRegina</div>
+        <nav>
+            <a href="index.html">Acasă</a>
+            <a href="elemente.html">Elemente</a>
+            <a href="regulament.html">Regulament</a>
+            <a href="despre.html">Despre Noi</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Elemente</h1>
+        <p>Aici vor fi prezentate toate elementele vizuale și tehnice ale VTC-ului: logo, skin-uri, bannere, etc.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
