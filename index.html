@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransRegina - Acasă</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TransRegina</div>
+        <nav>
+            <a href="index.html">Acasă</a>
+            <a href="elemente.html">Elemente</a>
+            <a href="regulament.html">Regulament</a>
+            <a href="despre.html">Despre Noi</a>
+        </nav>
+    </header>
 
+    <main>
+        <h1>Bine ai venit la TransRegina VTC</h1>
+        <p>Comunitatea noastră dedicată pasionaților de transport virtual în Euro Truck Simulator 2.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
