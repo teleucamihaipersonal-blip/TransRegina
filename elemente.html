@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransRegina - Elemente</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page">
+    <!-- HEADER -->
     <header>
-        <div class="logo">TransRegina</div>
-        <nav>
-            <a href="index.html">Acasă</a>
-            <a href="elemente.html">Elemente</a>
-            <a href="regulament.html">Regulament</a>
-            <a href="despre.html">Despre Noi</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                <div>
+                    <div class="logo-text">TransRegina</div>
+                    <div class="logo-sub">Virtual Trucking Company</div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Acasă</a>
+                <a href="elemente.html">Elemente</a>
+                <a href="regulament.html">Regulament</a>
+                <a href="despre.html">Despre Noi</a>
+                <a href="recrutari.html">Recrutări</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Elemente</h1>
-        <p>Aici vor fi prezentate toate elementele vizuale și tehnice ale VTC-ului: logo, skin-uri, bannere, etc.</p>
+        <h1 class="page-title">Elemente vizuale & setup</h1>
+        <p class="page-subtitle">
+            Logo, culori oficiale, skin-uri și recomandări de setup pentru camioane.
+        </p>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Branding</div>
+                <h2 class="section-title">Identitatea TransRegina</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Logo oficial</h3>
+                    <p>Versiune cu fundal transparent, în roșu principal. (aici poți pune un &lt;img&gt; cu logo-ul)</p>
+                </div>
+                <div class="card">
+                    <h3>Culori</h3>
+                    <p>Roșu principal, accente închise și tonuri întunecate pentru un look modern.</p>
+                </div>
+                <div class="card">
+                    <h3>Skin camion</h3>
+                    <p>Skin dedicat pentru camioane, cu logo și bandă roșie principală.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Setup recomandat</div>
+                <h2 class="section-title">Configurații camioane</h2>
+                <p class="section-desc">Exemple de configurații pentru curse lungi, convoys și city driving.</p>
+            </div>
+
+            <ul>
+                <li>Camion principal: Scania / Volvo, motor puternic pentru convoi.</li>
+                <li>Skin: TransRegina oficial, culoare roșie dominantă.</li>
+                <li>Faruri, beacon-uri și accesorii moderate – fără „circuri” vizuale.</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+        <p>&copy; <span id="year"></span> TransRegina VTC · ETS2</p>
     </footer>
+</div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
