@@ -4,35 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransRegina - Regulament</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page">
     <header>
-        <div class="logo">TransRegina</div>
-        <nav>
-            <a href="index.html">Acasă</a>
-            <a href="elemente.html">Elemente</a>
-            <a href="regulament.html">Regulament</a>
-            <a href="despre.html">Despre Noi</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                <div>
+                    <div class="logo-text">TransRegina</div>
+                    <div class="logo-sub">Virtual Trucking Company</div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Acasă</a>
+                <a href="elemente.html">Elemente</a>
+                <a href="regulament.html">Regulament</a>
+                <a href="despre.html">Despre Noi</a>
+                <a href="recrutari.html">Recrutări</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Regulament</h1>
-        <p>Regulile interne ale VTC-ului vor fi afișate aici. Exemplu:</p>
-        <ul>
-            <li>Respect între membri.</li>
-            <li>Participare activă la evenimente.</li>
-            <li>Respectarea regulilor de trafic și a organizatorilor.</li>
-        </ul>
+        <h1 class="page-title">Regulament TransRegina</h1>
+        <p class="page-subtitle">
+            Regulile sunt făcute ca să păstrăm respectul, organizarea și vibe-ul bun în comunitate.
+        </p>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Comportament</div>
+                <h2 class="section-title">Reguli generale</h2>
+            </div>
+            <ul>
+                <li>Respect față de toți membrii și staff.</li>
+                <li>Fără injurii, rasism, toxicitate sau trolling.</li>
+                <li>Respectarea regulilor serverelor pe care jucăm (ex: TruckersMP).</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Convoaie</div>
+                <h2 class="section-title">Reguli în convoi</h2>
+            </div>
+            <ul>
+                <li>Prezent la timp în punctul de întâlnire.</li>
+                <li>Nu depășești fără acordul organizatorului.</li>
+                <li>Păstrezi distanța față de camionul din față.</li>
+                <li>Urmezi instrucțiunile staff-ului de convoi.</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+        <p>&copy; <span id="year"></span> TransRegina VTC · ETS2</p>
     </footer>
+</div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
-</html> 
+</html>
