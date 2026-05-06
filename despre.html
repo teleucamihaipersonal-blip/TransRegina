@@ -4,30 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransRegina - Despre Noi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page">
     <header>
-        <div class="logo">TransRegina</div>
-        <nav>
-            <a href="index.html">Acasă</a>
-            <a href="elemente.html">Elemente</a>
-            <a href="regulament.html">Regulament</a>
-            <a href="despre.html">Despre Noi</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                <div>
+                    <div class="logo-text">TransRegina</div>
+                    <div class="logo-sub">Virtual Trucking Company</div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Acasă</a>
+                <a href="elemente.html">Elemente</a>
+                <a href="regulament.html">Regulament</a>
+                <a href="despre.html">Despre Noi</a>
+                <a href="recrutari.html">Recrutări</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Despre Noi</h1>
-        <p>TransRegina este o companie virtuală de transport dedicată jucătorilor ETS2. Ne bazăm pe profesionalism, respect și pasiune pentru condus.</p>
+        <h1 class="page-title">Despre TransRegina</h1>
+        <p class="page-subtitle">
+            Cine suntem, ce vrem să construim și de ce merită să fii parte din echipă.
+        </p>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Viziune</div>
+                <h2 class="section-title">Nu doar un VTC</h2>
+            </div>
+            <p class="section-desc">
+                TransRegina își propune să fie o comunitate stabilă, matură și organizată, unde fiecare șofer
+                se simte parte dintr-o echipă, nu doar un nume pe listă.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Structură</div>
+                <h2 class="section-title">Staff & organizare</h2>
+            </div>
+            <ul>
+                <li>Fondator / Owner</li>
+                <li>Management (coordonare evenimente, recrutări, regulament)</li>
+                <li>Staff tehnic (site, skin-uri, media)</li>
+                <li>Șoferi oficiali TransRegina</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> TransRegina VTC</p>
+        <p>&copy; <span id="year"></span> TransRegina VTC · ETS2</p>
     </footer>
+</div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
