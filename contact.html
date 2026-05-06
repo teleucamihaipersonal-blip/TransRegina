@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransRegina - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-mark"></div>
+                <div>
+                    <div class="logo-text">TransRegina</div>
+                    <div class="logo-sub">Virtual Trucking Company</div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Acasă</a>
+                <a href="elemente.html">Elemente</a>
+                <a href="regulament.html">Regulament</a>
+                <a href="despre.html">Despre Noi</a>
+                <a href="recrutari.html">Recrutări</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Contact TransRegina</h1>
+        <p class="page-subtitle">
+            Vrei să intri pe Discord, să pui o întrebare sau să propui un parteneriat?
+        </p>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Canale</div>
+                <h2 class="section-title">Unde ne găsești</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Discord</h3>
+                    <p>Invite: <strong>link_invite_discord</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Steam / TMP</h3>
+                    <p>Profil / grup: <strong>link_profil_steam</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Email</h3>
+                    <p><strong>transregina.vtc@example.com</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-kicker">Mesaj rapid</div>
+                <h2 class="section-title">Formular contact</h2>
+            </div>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="c-nume">Nume / Nickname</label>
+                    <input id="c-nume" type="text" placeholder="Ex: Mihai / Achma">
+                </div>
+                <div class="form-group">
+                    <label for="c-discord">Discord</label>
+                    <input id="c-discord" type="text" placeholder="Ex: Nume#1234">
+                </div>
+                <div class="form-group">
+                    <label for="c-mesaj">Mesaj</label>
+                    <textarea id="c-mesaj" placeholder="Scrie aici mesajul tău."></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Trimite (mock)</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> TransRegina VTC · ETS2</p>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
